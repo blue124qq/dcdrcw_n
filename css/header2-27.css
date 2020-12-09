@@ -1,0 +1,727 @@
+/*头部样式*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei","SimSun","Arial, Helvetica, sans-serif";
+    border: 0;
+    list-style: none;
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+    a:focus {
+        outline: 0;
+    }
+
+.wp {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wpp {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.clear:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.gaibanclear {
+    clear: both;
+}
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+/*topNav样式*/
+.topNav {
+    background-color: #F9F9F9;
+    min-width: 1138px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .topNav a {
+        display: inline-block;
+        height: 18px;
+        margin: 6px 0px;
+        font-size: 12px;
+        color: #666666;
+        line-height: 18px;
+    }
+
+    .topNav .download {
+        background: url('../images/mb.png') no-repeat left center;
+        padding-left: 21px;
+    }
+
+        .topNav .download a {
+            color: #F0514E;
+        }
+
+
+    .topNav span {
+        /*margin: 0 10px;*/
+        color: #E8E8E8;
+    }
+
+    .topNav a {
+        /*height: 31px;
+        line-height: 30px;*/
+        color: #666666;
+    }
+
+        .topNav a:hover {
+            color: #F0514E;
+        }
+
+    .topNav .right a {
+        padding: 0px 8px;
+        position: relative;
+        border-left: none;
+    }
+/*楼梯样式*/
+/*.leftBar{
+    width:180px !important;
+}*/
+.lviewbar {
+    width: 120px;
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    height: auto;
+    z-index: 99;
+    background: #fff;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+    .lviewbar .view_tit {
+        height: 36px;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 36px;
+        background: #B8572C;
+        -moz-border-radius: 4px 4px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+    }
+
+        .lviewbar .view_tit img {
+            vertical-align: middle;
+            margin: 0px 6px 0px 12px;
+        }
+
+    .lviewbar .view_con ul li {
+        padding: 14px 13px 5px;
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+.rightBar .view_con ul li {
+    padding: 8px 5px 5px !important;
+}
+
+.lviewbar .view_con ul li h3 {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.lviewbar .view_con ul li span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 11px;
+    font-family: "宋体";
+}
+
+.rightBar .view_con ul li span {
+    display: inline !important;
+}
+
+.lviewbar .lmore {
+    height: 32px;
+    display: none;
+    /*background: #F0514E;*/
+    background:#ccc;
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+    .lviewbar .lmore a {
+        display: block;
+        font-size: 14px;
+        color: #fff;
+        line-height: 32px;
+        text-align: center;
+    }
+/*headerBox样式*/
+.headerBox {
+    min-width: 1138px;
+    padding: 13px 0;
+    background: #fff;
+}
+
+    .headerBox .logo {
+        display: block;
+        float: left;
+    }
+
+    .headerBox .headerNav {
+        float: left;
+        margin-left: 32px;
+    }
+
+        .headerBox .headerNav li {
+            margin: 0 13px;
+        }
+
+            .headerBox .headerNav li a {
+                line-height: 63px;
+                font-size: 18px;
+                display: inline-block;
+                color: #408f67;
+            }
+
+            .headerBox .headerNav li.now a {
+                color: #F0514E;
+                font-size: 20px;
+            }
+
+.topBar .topBar-r a {
+    padding: 0px 8px;
+    position: relative;
+    border-left: none;
+}
+
+    .topBar .topBar-r a em {
+        position: absolute;
+        top: 0px;
+        right: 8px;
+        display: block;
+        width: 5px;
+        height: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #FF0000;
+    }
+
+.topBar .dlh span {
+    display: block;
+    height: 18px;
+    margin: 6px 0px;
+    font-size: 12px;
+    color: #666666;
+    padding-left: 10px;
+    line-height: 18px;
+    border-left: 1px solid #e8e8e8;
+    cursor: pointer;
+}
+
+.topBar .dlh:hover .dlhCon {
+    display: block;
+}
+
+.topBar .dlh .dlhCon {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    padding-top: 7px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.10);
+    z-index: 11;
+    display: none;
+}
+
+    .topBar .dlh .dlhCon a {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #333333;
+        /*line-height:16px;
+    margin-bottom:16px;*/
+        border-left: none;
+    }
+
+        .topBar .dlh .dlhCon a:hover {
+            color: #F0514E;
+        }
+
+.topBar .fr {
+    float: right;
+}
+
+.top {
+    min-width: 1000px;
+    background: #fff;
+    padding: 10px 0px;
+}
+
+    .top .logo {
+        display: block;
+        max-width: 188px;
+        height: 63px;
+        line-height: 60px;
+        margin-right: 28px;
+    }
+
+        .top .logo img {
+            width: auto;
+            height: auto;
+            max-width: 188px;
+            max-height: 63px;
+            vertical-align: middle;
+        }
+
+/*改版后*/
+.revision {
+    min-width: 1138px;
+    background: #32373E;
+}
+
+    .revision .wp {
+        width: 1100px;
+        margin: 0 auto;
+        height: 42px;
+    }
+
+        .revision .wp .logo_img a {
+            display: block;
+            width: 110px;
+            height: 42px;
+            line-height: 39px;
+            text-align: center;
+        }
+
+            .revision .wp .logo_img a img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+            }
+
+        .revision .wp .headerNav {
+            float: left;
+            margin-left: 23px;
+        }
+
+            .revision .wp .headerNav li {
+                padding: 0 16px;
+            }
+
+                .revision .wp .headerNav li a {
+                    line-height: 42px;
+                    display: inline-block;
+                    font-family: Microsoft YaHei;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                }
+
+                .revision .wp .headerNav li.now {
+                    background: #24282C;
+                }
+
+                    .revision .wp .headerNav li.now a {
+                    }
+
+                    .revision .wp .headerNav li.now i {
+                        display: none;
+                        width: 20px;
+                        height: 4px;
+                        margin: 0 auto;
+                        background: #FF8E0B;
+                        border-radius: 2px;
+                    }
+
+    .revision .revision_right {
+        color: #fff;
+        height: 42px;
+        line-height: 42px;
+    }
+
+        .revision .revision_right .download {
+            background: url(../images/mbha.png) no-repeat left center;
+            padding-left: 14px;
+            line-height: 42px;
+        }
+
+            .revision .revision_right .download a {
+                display: inline-block;
+                height: 18px;
+                margin: 6px 0px;
+                line-height: 18px;
+                font-size: 12px;
+                color: #FFFFFF;
+                text-align: left;
+            }
+
+        .revision .revision_right .topBar-r a {
+            padding: 0px 2px;
+            position: relative;
+            border-left: none;
+            font-family: STSongti-SC-Regular;
+            font-size: 12px;
+            color: #FFFFFF;
+            text-align: left;
+        }
+
+        .revision .revision_right .topBar-r .dlh span {
+            display: block;
+            height: 42px;
+            font-size: 12px;
+            color: #fff;
+            padding-left: 10px;
+            line-height: 42px;
+            cursor: pointer;
+        }
+        .revision .revision_right .topBar-r .dlh {
+            position:relative;
+        }
+        .revision .revision_right .topBar-r .dlh .dlhCon {
+            position: absolute;
+            right:0;
+            width: 120px;
+            height: auto;
+            padding-top: 7px;
+            background: #FFFFFF;
+            border: 1px solid #E8E8E8;
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,0.10);
+            z-index: 11;
+            display: none;
+        }
+
+
+            .revision .revision_right .topBar-r .dlh .dlhCon a {
+                display: block;
+                height: 18px;
+                line-height: 16px;
+                margin: 6px 0px;
+                margin-bottom: 16px;
+                text-align: center;
+                font-size: 14px;
+                color: #333333;
+                border-left: none;
+                padding: 0px 8px;
+                position: relative;
+            }
+                /*3689b3*/
+                .revision .revision_right .topBar-r .dlh .dlhCon a:hover {
+                    color: #F0514E;
+                }
+
+        .revision .revision_right .topBar-r .dlh:hover .dlhCon {
+            display: block;
+        }
+
+.yongimg {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprite_361857f.png);
+    background-position: -76px -174px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.revision .download:hover .drop-tips {
+    display: block;
+}
+
+.revision .download {
+    position: relative;
+    margin-left: 15px;
+}
+
+
+
+    .revision .drop-tips .nodetpl .arrow {
+        border-style: solid;
+        border-width: 8px;
+        display: block;
+        top: -16px;
+        right: 30px;
+        position: absolute;
+        border-color: transparent;
+        border-bottom-color: #fff;
+    }
+
+    .revision .drop-tips .nodetpl .h4 {
+        margin: -10px -15px 15px;
+        padding: 0 15px;
+        line-height: 50px;
+        font-weight: normal;
+        font-size: 16px;
+        font-family: 'Microsoft Yahei';
+        border-bottom: 1px dotted #ccc;
+        text-align: center;
+    }
+
+    .revision .drop-tips .nodetpl .erwei .clearfix:before {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+    .revision .drop-tips .nodetpl .erwei:nth-child(2n+1) {
+        border-right: 1px solid #ccc;
+        padding-right: 16px;
+    }
+
+    .revision .drop-tips .nodetpl .erwei .clearfix:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+    .revision .drop-tips .nodetpl .erwei dl dt {
+        float: left;
+        padding: 0 5px;
+        width: 115px;
+        display: block;
+    }
+
+        .revision .drop-tips .nodetpl .erwei dl dt img {
+            width: 99px;
+            height: 99px;
+            vertical-align: middle;
+        }
+
+    .revision .drop-tips .nodetpl .erwei dl dd {
+        margin-left: 125px;
+        padding: 8px 0;
+    }
+
+    .revision .drop-tips .nodetpl .erwei dl .zioti {
+        margin-left: 35px;
+    }
+
+    .revision .drop-tips .nodetpl .erwei dl dd a {
+        display: inline-block;
+        margin: 0;
+        padding: 5px 12px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        width: 90px;
+        line-height: 16px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        box-shadow: none;
+        background: #F0514E;
+        text-shadow: none;
+        border: 1px #FF6010 solid;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+        .revision .drop-tips .nodetpl .erwei dl dd a .xiazp {
+            display: inline-block;
+            background-position: 0px -144px;
+            background-image: url(../images/header-icons16.7b293174.png);
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            margin-top: -1px;
+            margin-right: .1em;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .revision .drop-tips .nodetpl .erwei dl dd a .android {
+            background-position: 0px -16px;
+        }
+
+.yongimg {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprite_361857f.png);
+    background-position: -76px -174px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.revision .download:hover .drop-tips {
+    display: block;
+}
+
+.revision .drop-tips {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    display: none;
+}
+
+    .revision .drop-tips .nodetpl {
+        position: relative;
+        background-color: #fff;
+        width: 766px;
+        right: 0;
+        top: -5px;
+        padding: 10px 15px;
+        color: #454545;
+        line-height: 20px;
+        text-align: left;
+        border: 2px solid #FF6010;
+        z-index: 9999999;
+    }
+
+        .revision .drop-tips .nodetpl .arrow {
+            border-style: solid;
+            border-width: 8px;
+            display: block;
+            top: -16px;
+            right: 30px;
+            position: absolute;
+            border-color: transparent;
+            border-bottom-color: #fff;
+        }
+
+        .revision .drop-tips .nodetpl .h4 {
+            margin: -10px -15px 15px;
+            padding: 0 15px;
+            line-height: 50px;
+            font-weight: normal;
+            font-size: 16px;
+            font-family: 'Microsoft Yahei';
+            border-bottom: 1px dotted #ccc;
+            text-align: center;
+        }
+
+        .revision .drop-tips .nodetpl .erwei .clearfix:before {
+            display: table;
+            line-height: 0;
+            content: "";
+        }
+
+        .revision .drop-tips .nodetpl .erwei {
+            border-right: 1px solid #ccc;
+            padding-right: 16px;
+        }
+            .revision .drop-tips .nodetpl .erwei:nth-child(5) {
+                border-right: 0 !important;
+                padding-right: 0 !important;
+            }
+        .revision .drop-tips .nodetpl .erwei .clearfix:after {
+            display: table;
+            line-height: 0;
+            content: "";
+        }
+
+        .revision .drop-tips .nodetpl .erwei dl dt {
+            float: left;
+            padding: 0 5px;
+            width: 115px;
+            display: block;
+        }
+
+            .revision .drop-tips .nodetpl .erwei dl dt img {
+                width: 99px;
+                height: 99px;
+                vertical-align: middle;
+            }
+
+        .revision .drop-tips .nodetpl .erwei dl dd {
+            margin-left: 125px;
+            padding: 8px 0;
+        }
+
+        .revision .drop-tips .nodetpl .erwei dl .zioti {
+            margin-left: 35px;
+        }
+
+        .revision .drop-tips .nodetpl .erwei dl dd a {
+            display: inline-block;
+            margin: 0;
+            padding: 5px 12px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+            width: 90px;
+            line-height: 16px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            box-shadow: none;
+            background: #F0514E;
+            text-shadow: none;
+            border: 1px #FF6010 solid;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+            .revision .drop-tips .nodetpl .erwei dl dd a .xiazp {
+                display: inline-block;
+                background-position: 0px -144px;
+                background-image: url(../images/header-icons16.7b293174.png);
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                margin-top: -1px;
+                margin-right: .1em;
+                vertical-align: middle;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .revision .drop-tips .nodetpl .erwei dl dd a .android {
+                background-position: 0px -16px;
+            }
+
+
+.xiaozhaoA {
+    margin: 5px 0; 
+    background: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 8px;
+    border-radius: 2px;
+    display:inline-block;
+    margin-left:5px;
+}
+.xiaozhaoA1{
+    color: #1E9FFF;
+    border: 1px solid #1E9FFF;
+}
+.xiaozhaoA2{
+    color: #FF5722;
+    border: 1px solid #FF5722;
+}
